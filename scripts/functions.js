@@ -33,14 +33,14 @@ for (let currentNumber = 1; currentNumber <= 100; currentNumber++ ) {
 // The function will increment a global variable by one each time it is invoked, 
 // and return that number and the band name concatenated together.
 
-let bandNumber = 1
+let bandNumber = 1;
 
-const takeNumber = function () {
-    /*
-        Write your awesome code here. See comments
-        below for what should be returned.
-    */
+const takeNumber = function assignNumber (...restArgs) {
+  for (let bandNumber = 1; bandNumber >= 1; bandNumber++) => i
+  // forEach bandNumber (restArgs.length);
 }
+
+
 
 const scum = takeNumber("Galactic Scum")
 console.log(scum)  // This should print "1. Galactic Scum" in the console
