@@ -47,7 +47,7 @@ const under = takeNumber("Underdogs")
 console.log(under)  // This should print "2. Underdogs" in the console
 
 
-//////////////////// BATTLE OF THE BANDS ////////////////////
+//////////////////// COOKOUT ////////////////////
 
 const hamburger = {
 	name: 'Hamburger',
@@ -92,6 +92,53 @@ function grill (currentObject) {
 // iterate over the array of foods and invoke the function for each item 
 // so that the cookedFood array contains all of the items after they are cooked.
 
-for (let i = 0; i <= foods.length; i++) {
-  grill();
+// for (let i = 0; i <= foods.length; i++) {
+//   grill();
+// }
+
+
+//////////////////// OVERLY EXCITED ////////////////////
+
+// create a single JavaScript function named addExcitement 
+// that will use console.log() to print out a sentence to the browser console.
+
+// function addExcitement() {
+//   console.log("This is a sentence.");
+// }
+
+// addExcitement();
+
+
+//////////////////// STACKING WORDS ////////////////////
+
+// Create an addExcitement function that should console.log() rows of words. 
+// It should take an array containing the words of a sentence and 
+// output them in the developer console.
+
+// Create an array that contains the words in the sentence
+let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+
+// The addExcitement function should be an impure function, 
+// and accept the array as the sole argument. It should iterate over the array
+// and output the words to the browser console.
+
+function addExcitement (sentence) {
+
+  // Each time the for loop executes, it adds one more word to this string
+  let buildMeUp = ""
+
+  for (let i = 0; i < sentence.length; i++) {
+    // Concatenate the new word onto buildMeUp
+
+    // Print buildMeUp to the console
+  }
 }
+
+// Invoke the function and pass in the array
+addExcitement(sentence)
+
+
+
+
+
+
