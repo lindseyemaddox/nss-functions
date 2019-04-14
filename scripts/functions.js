@@ -94,43 +94,71 @@ console.log(cookedFood);
 // create a single JavaScript function named addExcitement 
 // that will use console.log() to print out a sentence to the browser console.
 
-function addExcitement() {
-  console.log("This is a sentence.");
+const addExcitement = (sentence) => {
+  console.log(sentence);
 }
 
-addExcitement();
+addExcitement("This is an exciting sentence.");
 
 
 //////////////////// STACKING WORDS ////////////////////
-
-// Create an addExcitement function that should console.log() rows of words. 
-// It should take an array containing the words of a sentence and 
-// output them in the developer console.
 
 // Create an array that contains the words in the sentence
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
 // The addExcitement function should be an impure function, 
-// and accept the array as the sole argument. It should iterate over the array
-// and output the words to the browser console.
+// and accept the array as the sole argument. 
 
-function addExcitement (sentence) {
+function sentenceTree (theWordArray) {
 
-  // Each time the for loop executes, it adds one more word to this string
-  let buildMeUp = ""
+  // Each time the for loop executes, you're going to add one more word to this string
+  let buildMeUp = "";
 
-  for (let i = 0; i < sentence.length; i++) {
-    // Concatenate the new word onto buildMeUp
+  for (let i = 0; i < theWordArray.length; i++) {
 
-    // Print buildMeUp to the console
+      // Concatenate the new word onto buildMeUp
+      buildMeUp += `${theWordArray[i]} `;
+      
+      // Print buildMeUp to the console
+      console.log(buildMeUp);
   }
 }
 
 // Invoke the function and pass in the array
-addExcitement(sentence)
+sentenceTree(sentence);
 
 
+//////////////////// STACKING WORDS ////////////////////
 
+let sentence2 = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+
+function addExcitements (theWordArray) {
+    let buildMeUp = ""
+
+    for (let i = 0; i < theWordArray.length; i++) {
+        /*
+            If the current value of `i` divided by 3 has no
+            remainder, add an exclamation point to the end of
+            the word and then concatenate it to `buildMeUp`.
+
+            Otherwise, just concatenate the word itself.
+         */
+
+        if(i % 3 == 0) {
+          buildMeUp += `${"!"} `;
+        }
+
+        else {
+          buildMeUp += `${theWordArray[i]} `;
+        }
+
+        // Print buildMeUp to the console
+        console.log(buildMeUp);
+      }
+
+}
+
+addExcitements(sentence2)
 
 
 
