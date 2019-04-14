@@ -68,10 +68,10 @@ const steak = {
 	cooked: false,
 }
 
-// array that is grouping the objects together
+// array grouping the above objects together
 const foods = [hamburger, zucchini, chickenBreast, corn, steak];
 
-// An empty array that will store the objects after the `grill()` function cooks the food.
+// empty array that will store the objects after they `grill()`
 const cookedFood = [];
 
 function grill (currentObject) {
@@ -82,13 +82,11 @@ function grill (currentObject) {
   cookedFood.push(currentObject);
 };
 
-// iterate over the array of foods and 
-// invoke the function for each item 
-// so that the cookedFood array contains all of the items after they are cooked.
+foods.forEach(function(food) {
+	grill(food);
+});
 
-// for (let i = 0; i <= foods.length; i++) {
-//   grill();
-// }
+console.log(cookedFood);
 
 
 //////////////////// OVERLY EXCITED ////////////////////
