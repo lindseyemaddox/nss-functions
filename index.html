@@ -13,10 +13,8 @@
 
   <a href="https://github.com/nashville-software-school/client-side-mastery/blob/master/book-2-the-neophyte/chapters/JS_FUNCTION_BASICS.md" alt="nss repo">NSS repo reference</a>
 
-  <p>Functions are reusable code. When the same lines of code need to be repeated, put those lines of code in a function. A <strong>pure function</strong> is one that is consistent and has no effect on anything else in your system. <strong>Impure functions</strong> produce different results upon execution or affect other parts of the system when executed.</p>
+  <p>Functions are reusable code. A <strong>pure function</strong> is one that is consistent and has no effect on anything else in your system. <strong>Impure functions</strong> produce different results upon execution or affect other parts of the system when executed.</p>
   
-  <p>A function can be called with any number of arguments, no matter how it is defined.</p>
-
   <p>Functions include:</p>
   <ul>
     <li>the keyword <em>function</em></li>
@@ -26,39 +24,47 @@
     <li>executable code between the brackets</li>
   </ul>
 
+  <p>When data is placed between the parentheses, it is passed to the function that it uses when it executes. This data is called an <strong>argument</strong>. You can pass any number of arguments, separated by commas, to a function. A variable inside the parentheses in a function statement is known as a <strong>parameter</strong>. A function can only return a single value through the <strong>return</strong> statement.</p>
+
+  <p>Variable <em>scope</em> is the difference between local and global variables. A local variable is declared inside a function, as a parameter of the function or a variable declared explicitly in the function using a keyword. A global variable is declared in the main body. It's always best to pass values explicitly to functions through arguments. Global variables have no place in functions. </p>
+
   <h3>Three Ways to Write a Function</h3>
 
-  <code>function firstWayToWriteAFunction() {<br/>
+  <code>function functionNameOne(parameter) {<br/>
     <br/>
   }</code>
 
-  <code>const secondWayToWriteAFunction = function() {<br/>
+  <code>functionNameOne(argument);</code>
+
+  <code>const functionNameTwo = function() {<br/>
     <br/>
   }</code>
 
-  <code>const thirdWayToWriteAFunction = () => {<br/>
+  <code>const functionNameThree = () => {<br/>
     <br/>
   }</code>
 
   <hr />
 
-  <h2>ChickenMonkey</h2>
+  <h2>Practice</h2>
+
+  <h4>ChickenMonkey</h4>
 
   <p>Write a program that prints the numbers from 1 to 100. For multiples of five print chicken instead of the number. For the multiples of seven print monkey. For numbers which are multiples of both five and seven print chickenmonkey.</p>
 
-  <h2>Take a Number - Battle of the Bands</h2>
+  <h4>Take a Number - Battle of the Bands</h4>
 
   <p>Write a function that accepts any band name as an argument. The function will increment a global variable by one each time it is invoked, and return that number, and the band name concatenated together.</p>
 
-  <h2>Cookout</h2>
+  <h4>Cookout</h4>
 
   <p>Your task is to iterate over the array of foods and invoke the function for each item so that the cookedFood array contains all of the items after they are cooked.</p>
 
-  <h2>Overly Excited</h2>
+  <h4>Overly Excited</h4>
 
   <p>For this exercise, you need to create a single JavaScript function named addExcitement that will use console.log() to print out a sentence to the browser console.</p>
 
-  <h2>Stacking Words</h2>
+  <h4>Stacking Words</h4>
 
   <p>The learning objective of this exercise is to use iteration and string concatenation</p>
 
