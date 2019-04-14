@@ -1,7 +1,7 @@
 
 console.log("hello there functions");
 
-//////////////////// CHICKENMONKEY ////////////////////
+console.log("//////////////////// CHICKENMONKEY ////////////////////");
 
 let currentNumber; 
 
@@ -26,7 +26,7 @@ for (let currentNumber = 1; currentNumber <= 100; currentNumber++ ) {
 }
 
 
-//////////////////// BATTLE OF THE BANDS ////////////////////
+console.log("//////////////////// BATTLE OF THE BANDS ////////////////////");
 
 let bandNumber = 0;
 
@@ -40,7 +40,7 @@ takeNumber("Band Two");
 takeNumber("Band Three");
 
 
-//////////////////// COOKOUT ////////////////////
+console.log("//////////////////// COOKOUT ////////////////////");
 
 const hamburger = {
 	name: 'Hamburger',
@@ -89,7 +89,7 @@ foods.forEach(function(food) {
 console.log(cookedFood);
 
 
-//////////////////// OVERLY EXCITED ////////////////////
+console.log("//////////////////// OVERLY EXCITED ////////////////////");
 
 // create a single JavaScript function named addExcitement 
 // that will use console.log() to print out a sentence to the browser console.
@@ -101,7 +101,7 @@ const addExcitement = (sentence) => {
 addExcitement("This is an exciting sentence.");
 
 
-//////////////////// STACKING WORDS ////////////////////
+console.log("//////////////////// STACKING WORDS ////////////////////");
 
 // Create an array that contains the words in the sentence
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
@@ -128,11 +128,11 @@ function sentenceTree (theWordArray) {
 sentenceTree(sentence);
 
 
-//////////////////// STACKING WORDS ////////////////////
+console.log("//////////////////// some ////////////////////");
 
 let sentence2 = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
-function addExcitements (theWordArray) {
+function addExcitements (theWordArray, punctuation) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
@@ -144,8 +144,8 @@ function addExcitements (theWordArray) {
             Otherwise, just concatenate the word itself.
          */
 
-        if(i % 3 == 0) {
-          buildMeUp += `${"!"} `;
+        if(i % 3 == 2) {
+          buildMeUp += `${theWordArray[i] + punctuation} `;
         }
 
         else {
@@ -158,7 +158,10 @@ function addExcitements (theWordArray) {
 
 }
 
-addExcitements(sentence2)
+// addExcitements(sentence2)
 
 
+console.log("//////////////////// FUNCTION ARGUMENTS ////////////////////");
 
+// I want to use a question mark
+addExcitements(sentence2, "?");
