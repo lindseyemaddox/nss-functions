@@ -163,5 +163,5 @@ function addExcitements (theWordArray, punctuation) {
 
 console.log("//////////////////// FUNCTION ARGUMENTS ////////////////////");
 
-// I want to use a question mark
+// I want to use a question ssmark
 addExcitements(sentence2, "?");
