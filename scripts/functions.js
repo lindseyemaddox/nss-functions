@@ -127,35 +127,29 @@ function sentenceTree (theWordArray) {
 // Invoke the function and pass in the array
 sentenceTree(sentence);
 
-
-console.log("//////////////////// some ////////////////////");
-
 let sentence2 = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
 function addExcitements (theWordArray, punctuation) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
-        /*
-            If the current value of `i` divided by 3 has no
-            remainder, add an exclamation point to the end of
-            the word and then concatenate it to `buildMeUp`.
+    /*
+        If the current value of `i` divided by 3 has no
+        remainder, add an exclamation point to the end of
+        the word and then concatenate it to `buildMeUp`.
+        Otherwise, just concatenate the word itself.
+      */
 
-            Otherwise, just concatenate the word itself.
-         */
+    if(i % 3 == 2) {
+      buildMeUp += `${theWordArray[i] + punctuation} `;
+    }
 
-        if(i % 3 == 2) {
-          buildMeUp += `${theWordArray[i] + punctuation} `;
-        }
+    else {
+      buildMeUp += `${theWordArray[i]} `;
+    }
 
-        else {
-          buildMeUp += `${theWordArray[i]} `;
-        }
-
-        // Print buildMeUp to the console
-        console.log(buildMeUp);
-      }
-
+    console.log(buildMeUp);
+  }
 }
 
 // addExcitements(sentence2)
@@ -163,5 +157,5 @@ function addExcitements (theWordArray, punctuation) {
 
 console.log("//////////////////// FUNCTION ARGUMENTS ////////////////////");
 
-// I want to use a question ssmark
-addExcitements(sentence2, "?");
+// using an asterisk 
+addExcitements(sentence2, "*");
