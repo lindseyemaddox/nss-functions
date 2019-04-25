@@ -3,15 +3,15 @@ console.log("hello there functions");
 
 console.log("//////////////////// CHICKENMONKEY ////////////////////");
 
-let currentNumber; 
+let currentNumber;
 
-for (let currentNumber = 1; currentNumber <= 100; currentNumber++ ) {
+for (let currentNumber = 1; currentNumber <= 100; currentNumber++) {
 
-  if (currentNumber % 5 === 0 && currentNumber % 7 === 0 ) {
+  if (currentNumber % 5 === 0 && currentNumber % 7 === 0) {
     console.log("chickenmonkey");
   }
-    
-  else if (currentNumber % 5 === 0 ) {
+
+  else if (currentNumber % 5 === 0) {
     console.log("chicken");
   }
 
@@ -21,8 +21,8 @@ for (let currentNumber = 1; currentNumber <= 100; currentNumber++ ) {
 
   else {
     console.log(currentNumber);
-  } 
-    
+  }
+
 }
 
 
@@ -43,47 +43,47 @@ takeNumber("Band Three");
 console.log("//////////////////// COOKOUT ////////////////////");
 
 const hamburger = {
-	name: 'Hamburger',
-	type: 'beef',
-	cooked: false,
+  name: 'Hamburger',
+  type: 'beef',
+  cooked: false,
 }
 const zucchini = {
-	name: 'Zucchini',
-	type: 'vegetable',
-	cooked: false,
+  name: 'Zucchini',
+  type: 'vegetable',
+  cooked: false,
 }
 const chickenBreast = {
-	name: 'Chicken Breast',
-	type: 'chicken',
-	cooked: false,
+  name: 'Chicken Breast',
+  type: 'chicken',
+  cooked: false,
 }
 const corn = {
-	name: 'Corn',
-	type: 'vegetable',
-	cooked: false,
+  name: 'Corn',
+  type: 'vegetable',
+  cooked: false,
 }
 const steak = {
-	name: 'Steak',
-	type: 'beef',
-	cooked: false,
+  name: 'Steak',
+  type: 'beef',
+  cooked: false,
 }
 
-// array grouping the above objects together
+// array grouping the objects together
 const foods = [hamburger, zucchini, chickenBreast, corn, steak];
 
-// empty array that will store the objects after they `grill()`
+// empty array to store the grilled objects
 const cookedFood = [];
 
-function grill (currentObject) {
-  // Modify the food so that it is cooked
+let grill = (currentObject) => {
+  // cook the food
   currentObject.cooked = true;
 
-  // Put the cooked food into the appropriate array
+  // move cooked food into the empty array
   cookedFood.push(currentObject);
 };
 
-foods.forEach(function(food) {
-	grill(food);
+foods.forEach(function (food) {
+  grill(food);
 });
 
 console.log(cookedFood);
@@ -104,43 +104,37 @@ addExcitement("This is an exciting sentence.");
 console.log("//////////////////// STACKING WORDS ////////////////////");
 
 // Create an array that contains the words in the sentence
-let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
 
 // The addExcitement function should be an impure function, 
 // and accept the array as the sole argument. 
 
-function sentenceTree (theWordArray) {
+let sentenceTree = (theWordArray) => {
 
   // Each time the for loop executes, you're going to add one more word to this string
   let buildMeUp = "";
 
   for (let i = 0; i < theWordArray.length; i++) {
 
-      // Concatenate the new word onto buildMeUp
-      buildMeUp += `${theWordArray[i]} `;
-      
-      // Print buildMeUp to the console
-      console.log(buildMeUp);
+    // Concatenate the new word onto buildMeUp
+    buildMeUp += `${theWordArray[i]} `;
+
+    // Print buildMeUp to the console
+    console.log(buildMeUp);
   }
 }
 
 // Invoke the function and pass in the array
 sentenceTree(sentence);
 
-let sentence2 = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+let sentence2 = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
 
-function addExcitements (theWordArray, punctuation) {
-    let buildMeUp = ""
+let addExcitements = (theWordArray, punctuation) => {
+  let buildMeUp = ""
 
-    for (let i = 0; i < theWordArray.length; i++) {
-    /*
-        If the current value of `i` divided by 3 has no
-        remainder, add an exclamation point to the end of
-        the word and then concatenate it to `buildMeUp`.
-        Otherwise, just concatenate the word itself.
-      */
+  for (let i = 0; i < theWordArray.length; i++) {
 
-    if(i % 3 == 2) {
+    if (i % 3 == 2) {
       buildMeUp += `${theWordArray[i] + punctuation} `;
     }
 
@@ -152,7 +146,7 @@ function addExcitements (theWordArray, punctuation) {
   }
 }
 
-// addExcitements(sentence2)
+//  addExcitements(sentence2)
 
 
 console.log("//////////////////// FUNCTION ARGUMENTS ////////////////////");
